@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Rock Paper Scissors</title>
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<p>
+				ROCK <br />
+				PAPER <br />
+				SCISSORS
+			</p>
+			<div class="score">
+				score
+				<span class="score-value">0</span>
+			</div>
+		</header>
+		<!-- Start Rules pop up -->
+		<div class="rules-popup hide">
+			<div class="header">
+				<span> RULES </span>
+				<span class="close">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
+						<path
+							fill="#3B4262"
+							fill-rule="evenodd"
+							d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
+							opacity=".25"
+						/>
+					</svg>
+				</span>
+			</div>
+			<img src="./images/image-rules.svg" alt="" />
+		</div>
+
+		<!-- End Rules pop up -->
+		<section class="content">
+			<!-- Content -->
+			<!-- start page -->
+			<section class="start-page">
+				<div class="triangle">
+					<!-- <img src="./images/bg-triangle.svg" alt="" /> -->
+					<div class="top-two">
+						<div class="option paper">
+							<img src="./images/icon-paper.svg" alt="" />
+						</div>
+						<div class="option scissors">
+							<img src="./images/icon-scissors.svg" alt="" />
+						</div>
+					</div>
+					<div class="bottom-one">
+						<div class="option rock">
+							<img src="./images/icon-rock.svg" alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Result page -->
+			<section class="result hide">
+				<div class="you">
+					<h3>YOU PICKED</h3>
+					<div class="option"></div>
+				</div>
+				<div>
+					<h2 class="result-heading">YOU WIN</h2>
+					<button class="play-again">PLAY AGAIN</button>
+				</div>
+				<div class="house">
+					<h3>THE HOUSE PICKED</h3>
+					<div class="option"></div>
+				</div>
+			</section>
+		</section>
+		<button class="rules-open">RULES</button>
+		<p class="copyrights">
+			Challenge by
+			<a href="https://www.frontendmentor.io/">Frontend Mentor.</a> Coded by
+			Mahmoud.
+		</p>
+	</body>
+	<script src="./js/main.js"></script>
+</html>
